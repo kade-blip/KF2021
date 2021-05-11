@@ -9,6 +9,7 @@ public class CollectableController : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             GameManager._instance.AddItem();
+            Destroy(gameObject);
         }
     }
 }
